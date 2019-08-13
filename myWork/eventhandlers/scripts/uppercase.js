@@ -10,6 +10,7 @@ window.onload = function (){
     const addressField = document.getElementById("inputAddress");
     const cityField = document.getElementById("inputCity");
     const stateField = document.getElementById("inputState");
+    const billingOption = document.getElementById("billingOption");
 
     firstnameField.oninput = function(){
         firstnameField.value = firstnameField.value.toUpperCase();
@@ -31,6 +32,6 @@ window.onload = function (){
         stateField.value = stateField.value.toUpperCase();
     };
 
-    
+billing
 
 };
