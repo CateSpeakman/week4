@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Ice Cream</title>
+</head>
+
+<body class="container-fluid">
+    <main>
+        <h1 class="jumbotron">Ice Cream Order</h1>
+        <!-- this section will ask the user to input how many scoops of ice cream they would like and
+    will provide check boxes for various toppings -->
+        <fieldset>
+            <div class="container col md-6 scoops">
+                <h2>How many scoops would you like?</h2>
+                <form name="ice cream order">
+                    <div class="form-row align-items-center">
+                        <div class="col-auto my-1">
+                            <!-- this is where the customer will select how many scoops they want-->
+                            <label class="mr-sm-2 sr-only" for="numScoops">Preference</label>
+                            <select class="custom-select mr-sm-2" id="numScoops">
+                                <option selected>Choose...</option>
+                                <option id="oneScoop" value="1">One Scoop</option>
+                                <option id="twoScoops" value="2">Two Scoops</option>
+                                <option id="threeScoops" value="3">Three scoops</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <!-- this is where the customer will choose a cup or waffle cone-->
+                <div class="container">
+                    <h2>Cup or Waffle Cone? <br /></h2>
+                    <div class="form-check form-check-inline">
+
+                        <input class="form-check-input" type="radio" name="iceCreamContainer" id="cup" value="cup">
+                        <label class="form-check-label" for="cup">Cup</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="iceCreamContainer" id="waffleCone"
+                            value="waffleCone">
+                        <label class="form-check-label" for="waffleCone">Waffle Cone</label>
+                    </div>
+                </div>
+                <!-- this is where the customer will select their toppings-->
+                <div class="container">
+                    <h2>Toppings?</h2>
+                    <div class="row my-3" id="hotfudgeDiv">
+                        <input type="checkbox" id="hotFudge" name="hotFudge" value="hotFudge"> Hot Fudge ($1.25)
+                    </div>
+
+                    <div class="row my-3">
+                        <input type="checkbox" id="sprinkles" name="sprinkles" value="sprinkles"> Sprinkles
+                        ($0.25)
+                    </div>
+
+                    <div class="row my-3">
+                        <input type="checkbox" id="whipCream" name="whipCream" value="whipCream"> Whip Cream
+                        ($0.75)
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <input class="btn btn-success" type="button" id="totalCostBtn" value="Submit">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <label for="totalCost">Total Ice Cream Cost:</label>
+                        <input type="number" id="totalCost" name="totalCost" readonly>
+                    </div>
+
+                </div>
+            </div>
+
+        </fieldset>
+    </main>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="scripts/iceCream2.js"></script>
+</body>
+
+</html>
